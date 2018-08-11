@@ -237,3 +237,30 @@ footer p {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* ABOUT PAGE */
+#aboutBack{
+    background: url("img/aboutBack.jpg");
+    height: 457px;
+    width: 817px;
+    margin: 0 auto;
+}
+#aboutContainer{
+    text-align: center;
+}
+#aboutContainer ul{
+    list-style: none;
+    line-height: 2;
+    font-weight: bold;
+}
+#contactContainer{
+    text-align: center;
+    margin: 30px auto;
+}
+#poemContainer{
+    line-height: 1.5;
+    text-align: center;
+    margin: 30px auto;
+}
+#poemContainer p{
+    margin-bottom: 20px;
+}
