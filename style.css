@@ -117,7 +117,7 @@ h4 {
 #homePhoto a {
     border-radius: 10px;
     padding: 10px 10px;
-    background: radial-gradient(#eeeeee, #555555);
+    background: linear-gradient(#333333, #cccccc);
     line-height: 703px;
     font-size: 2em;
     text-decoration: none;
