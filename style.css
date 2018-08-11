@@ -26,6 +26,7 @@ nav {
 #headerAbout {
     width: 153px;
     margin-left: 60px;
+    margin-right: 100px;
 }
 
 #headerAbout span {
@@ -70,15 +71,15 @@ h4{
     position: relative;
     top: 20;
     left: 20;
-    height: 331px;
-    width: 380px;
+    height: 431px;
+    width: 480px;
     background: url(img/about_me_home_back.jpg) center center no-repeat;
     opacity: 0.75;
 }
 
 #homeBackground #noteBack p {
     padding: 10px 10px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     font-weight: bold;
 }
@@ -180,7 +181,9 @@ footer p {
 }
 
 /* BOOKS PAGE STYLES*/
-
+#booksContainer{
+    margin: 0 10px;
+}
 #booksContainer div.clearfix {
     margin-bottom: 20px;
 }
@@ -198,13 +201,13 @@ footer p {
 }
 
 /* DROPDOWN WORKS STYLE */
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
+    padding: 10px;
     display: none;
     position: absolute;
     background-color: #f1f1f1;
