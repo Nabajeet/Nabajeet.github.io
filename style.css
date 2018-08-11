@@ -41,13 +41,15 @@ nav ul li {
     font-weight: bold;
     display: inline-block;
     margin-left: 0px;
-    padding:0 30px;
+    padding: 0 30px;
 }
 
-header a:link,header a:visited {
+header a:link,
+header a:visited {
     color: #333333;
     text-decoration: none;
 }
+
 header a:hover {
     color: #66ccff;
 }
@@ -56,7 +58,8 @@ a:active {
     position: relative;
     top: 1px;
 }
-h4{
+
+h4 {
     text-align: center;
 }
 
@@ -68,25 +71,27 @@ h4{
 }
 
 #homeBackground #noteBack {
+     z-index: 1;
     position: relative;
     top: 20;
     left: 20;
-    height: 431px;
-    width: 480px;
+    height: 479px;
+    width: 580px;
     background: url(img/about_me_home_back.jpg) center center no-repeat;
     opacity: 0.75;
 }
 
 #homeBackground #noteBack p {
     padding: 10px 10px;
-    font-size: 20px;
-    line-height: 2;
+    font-size: 28px;
+    line-height: 1.5;
     font-weight: bold;
 }
 
 #homeBackground #noteBack a img {
     opacity: 1;
-    margin: 0 auto;
+    margin: 0 auto;   
+
 }
 
 #homeSketch {
@@ -181,9 +186,11 @@ footer p {
 }
 
 /* BOOKS PAGE STYLES*/
-#booksContainer{
+
+#booksContainer {
     margin: 0 10px;
 }
+
 #booksContainer div.clearfix {
     margin-bottom: 20px;
 }
@@ -201,6 +208,7 @@ footer p {
 }
 
 /* DROPDOWN WORKS STYLE */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -211,6 +219,8 @@ footer p {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+        z-index: 2;
+
 }
 
 .dropdown-content a {
@@ -220,6 +230,10 @@ footer p {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
