@@ -122,3 +122,21 @@ footer a {
 .container-img:hover .mag-btn {
     opacity: 1;
 }
+
+/* Media Queries */
+
+@media only screen and ( max-width : 568px ) {
+    .cover h1 {
+        font-size: 40px;
+    }
+    section {
+        padding: 20px;
+    }
+    .modal-body {
+    height: 300px;
+    }
+    .modalImg{
+        width: 100%;
+        height: 100%;
+    }
+}
