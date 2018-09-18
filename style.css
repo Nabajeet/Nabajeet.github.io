@@ -4,6 +4,8 @@ body {
     color: #333333;
     font-family: courier, monospace;
     font-size: 16px;
+    background:url(img/paper-pattern.jpg) top left repeat;
+
 }
 
 #container {
@@ -90,7 +92,7 @@ h4 {
 
 #homeBackground #noteBack a img {
     opacity: 1;
-    margin: 0 auto;   
+    margin: 0 auto;
 
 }
 
