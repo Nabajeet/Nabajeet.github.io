@@ -1,81 +1,212 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Nabajeet</title>
-    <!-- Normalize.css -->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
-    <!--
-Meta Description. For Search Engines.
-For more about <meta> tags: w3schools.com/tags/tag_meta.asp
--->
-    <meta name="description" content="A minimal website about Nabajeet Sonowal.">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<![endif]-->
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <a id="logo" href="index.html"><img src="img/nabajeet_logo.png" alt="Nabajeet Logo"></a>
-            <div id="headerAbout">
-                <span>WEB DEVELOPER</span><br>
-                <em> and many more half cooked skills </em>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Nabajeet Sonowal</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li class="dropdown">
-                        <span class="dropbtn">WORKS</span>
-                        <span class="dropdown-content">
-                            <a href="sketches.html">SKETCHING</a>
-                            <a href="photography.html">PHOTOGRAPHY</a>
-                            <a href="books.html">BOOKS</a>
-                            <a href="poetry.html">POETRY</a>
-                            <a href="vr.html">VR</a>
-                        </span>
-                    </li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#my_skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <section>
-            <div id="homeBackground">
-                <div id="noteBack">
-                    <p>
-                        I am basically a Software Engineer currently residing in Guwahati city of India, working at Vantage Circle. My alma matter is Indian Institute of Technology, Roorkee. I have some basic skills of sketching and photography but far from creating anything which pleases the eye, besides I try to write poetry when I feel like it. </p>
-                    <p></p>
-                    <a href="https://www.facebook.com/nabajeet.sonowal" target="_blank"><img src="img/fb_logo.png" alt="fb logo"></a>
-                    <a href="https://www.instagram.com/nabajeetsonowal/" target="_blank"><img src="img/insta_logo.png" alt="insta logo"></a>
-                    <a href="https://www.linkedin.com/in/nabajeetsonowal/" target="_blank"><img src="img/linkedin_logo.png" alt="quora logo"></a>
-                </div>
             </div>
-            <div id="homeWorks">
-                <div id="homeSketch">
-                    <a href="sketches.html">Sketches</a>
-                </div>
-                <div id="homePhoto">
-                    <a href="photography.html">Photography</a>
-                </div>
+        </div>
+    </nav>
 
-            </div>
-            <div id="homeBooks">
-                <span>Favorite Books</span>
-                <a href="books.html"><img src="img/books.jpg" alt="favorite books"></a>
-
-            </div>
-        </section>
-        <footer>
-            <p>&copy; 2018 Nabajeet Sonowal</p>
-        </footer>
+    <div class="cover">
+        <div class="cover-text">
+            <h1>I am basically a Web Developer</h1>
+            <p class="lead">And many more half cooked skills.</p>
+            <a href="#about" role="button" class="btn btn-danger btn-lg">Know me more.</a>
+        </div>
     </div>
-    <!-- #container -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <p class="lead">
+                I am basically a Software Engineer currently residing in Guwahati city of India, working at Vantage Circle. My alma matter is Indian Institute of Technology, Roorkee. I have some basic skills of sketching and photography but far from creating anything which pleases the eye, besides I try to write poetry when I feel like it.
+            </p>
+            <span class="social_media">
+                <a href="https://www.linkedin.com/in/nabajeetsonowal/" target="_blank"><img src="img/linkedin_logo.png" alt="linkedin logo"></a>
+            </span>
+        </div>
+    </section>
+    <section id="my_skills">
+        <h2>My skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Software Development</h3>
+                    <p>Have decent Software Development skills using languages such as Java, Scala, C, C++. Also have knowledge of MySQl, Spark, ElasticSearch, Algolia, Cassandra, PHP, HTML, CSS, JavaScript, JQuery.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Photography</h3>
+                    <p>Have been trying my hands in photography since 2014, still stuck at amateur levels.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Sketching</h3>
+                    <p>Learning to sketch from last year.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Poetry</h3>
+                    <p>Motivated to write poetry in some particular situations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <h2>Some of my works</h2>
+            <div class="row">
+                <div class="col-sm-3 container-img">
+                    <img class="works-img" src="img/photo1.png" alt="iit roorkee" class="img-rounded">
+                    <button class="mag-btn btn btn-default btn-lg" data-toggle="modal" data-target="#photo1"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                    <h4>IIT Roorkee Thomson Building</h4>
+                    <p>Clicked in my final on an early moring stroll.</p>
+                </div>
+                <div class="col-sm-3 container-img">
+                    <img class="works-img" src="img/photo2.png" alt="lady bug" class="img-rounded">
+                    <button class="mag-btn btn btn-default btn-lg" data-toggle="modal" data-target="#photo2"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                    <h4>Golden bug</h4>
+                    <p>We easily visible near my home before, rarely seen nowadays.</p>
+                </div>
+                <div class="col-sm-3 container-img">
+                    <img class="works-img" src="img/image1.png" alt="eye drawing" class="img-rounded">
+                    <button class="mag-btn btn btn-default btn-lg" data-toggle="modal" data-target="#image1"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                    <h4>Eye Sketch</h4>
+                    <p>First sketch which got me concentrate for more than an hour.</p>
+                </div>
+                <div class="col-sm-3 container-img">
+                    <img class="works-img" src="img/image6.png" alt="Woman's face" class="img-rounded">
+                    <button class="mag-btn btn btn-default btn-lg" data-toggle="modal" data-target="#image6"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                    <h4>Dream Girl Sketch</h4>
+                    <p>&hearts; &hearts; &hearts;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in touch</h2>
+            <p class="lead">Leave an email &#64; nabajeetsonowal@gmail.com</p>
+            <span class="social_media">
+            <a href="https://www.facebook.com/nabajeet.sonowal" target="_blank"><img src="img/fb_logo.png" alt="linkedin logo"></a>
+            <a href="https://www.instagram.com/nabajeetsonowal/" target="_blank"><img src="img/insta_logo.png" alt="linkedin logo"></a>
+            </span>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div id="photo1" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">IIT Roorkee Thomson Building</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="modalImg" src="img/photo1.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="photo2" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Golden Bug</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="modalImg" src="img/photo2.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="image1" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Eye Sketch</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="modalImg" src="img/image1.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="image6" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">A Girl Sketch</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="modalImg" src="img/image6.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2018 Nabajeet Sonowal &hearts;
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
