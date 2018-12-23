@@ -21,21 +21,27 @@ body,
 }
 
 .cover-text h1 {
-    text-shadow: 6px 6px #111111;
+    text-shadow: 3px 1px #111111;
     margin: 0;
     font-size: 70px;
-    letter-spacing: -3px;
+    font-weight: 400;
+    /*letter-spacing: -2px;*/
 }
 
 .cover-text p {
     text-shadow: 2px 2px #111111;
     margin: 0;
     font-size: 30px;
+    line-height: 3;
 }
 
 nav.navbar-inverse {
     background: rgba(0, 0, 0, 0.5);
     border: none;
+}
+.navbar-brand{
+    font-size: 22px;
+    font-family: Lobster,sans-serif;
 }
 
 .about {
